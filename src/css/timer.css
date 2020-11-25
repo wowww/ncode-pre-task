@@ -1,0 +1,47 @@
+.event-timer {
+  padding-top: 30px;
+  padding-bottom: 7%;
+}
+
+#timer {
+  font-size: 1em;
+}
+
+#timer  .timer-text-wrap {
+  display: block;
+  content: '';
+  clear: both;
+
+}
+
+#timer  .timer-text-wrap div {
+  float: left;
+}
+
+.remain-time {
+  margin-right: 7px;
+}
+
+#timer em {
+  margin-left: 3px;
+}
+
+#timer .bar {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 6px;
+  background-color: #a4a4a4;
+  border-radius: 10px;
+}
+
+#timer .bar-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #28D28E;
+}
