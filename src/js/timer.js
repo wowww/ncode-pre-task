@@ -13,15 +13,17 @@ function updateTimer() {
   h = hours - days * 24;
   m = mins - hours * 60;
   s = secs - mins * 60;
-  percent = (now - startTime)*100 / (endTime-startTime);
+  percent = (now - startTime) * 100 / (endTime-startTime);
 
   document.getElementById("timer")
     .innerHTML =
     '<div class="bar">' + '<span class="bar-color"><span></div>' +
-    '<div>' + d + '<span>일</span></div>' +
-    '<div>' + h + '<span>시간</span></div>' +
-    '<div>' + m + '<span>분</span></div>' +
-    '<div>' + s + '<span>초</span></div>';
+    '<div class="timer-text-wrap">' +
+    '<div class="remain-time">남은시간</div>' +
+    '<div><em>' + d + '</em><span>일</span></div>' +
+    '<div><em>' + h + '</em><span>시간</span></div>' +
+    '<div><em>' + m + '</em><span>분</span></div>' +
+    '<div><em>' + s + '</em><span>초</span></div></div>';
 
   document.querySelector('.bar-color').style.width = `${percent}%`;
 }
