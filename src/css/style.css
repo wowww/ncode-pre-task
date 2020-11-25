@@ -16,8 +16,8 @@
   margin-bottom: 30px;
 }
 
-.mb60 {
-  margin-bottom: 60px;
+.mb90 {
+  margin-bottom: 90px;
 }
 
 .wrap {
@@ -200,11 +200,11 @@ section {
 
 .discount-event {
   max-width: 100%;
+  background-color: #dadbdc;
 }
 
 .event-bg {
   min-width: 100%;
-  background-color: #f3f3f2;
 }
 
 .event-contents {
@@ -212,6 +212,30 @@ section {
   max-width: 1200px;
 }
 
+.event-text,
+.event-bg-image {
+  float: left;
+  width: 50%;
+}
+
+.event-bg-image {
+  
+  padding-bottom: 50%;
+  background-size: cover;
+  background-image: url(../images/event-bg-image.jpg);
+}
+
+.description {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.description-item {
+  width: 100%;
+  padding-bottom: 61%;
+  background-size: cover;
+  background-image: url(../images/description-item.jpg);
+}
 
 
 @media (max-width: 576px) {
