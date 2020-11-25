@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/timer.css">
@@ -16,66 +17,67 @@
       <h1>d.code</h1>
     </div>
     <section class="products">
-
       <div class="view-product">
         <img src="src/images/main-product01.jpg" alt="">
       </div>
       <div class="product-list">
-        <div class="product-title">
+        <div class="product-title mb30">
           <h2>
-            <div>
+            <strong>
               BY FAR 21PS
-            </div>
-            <div>
+            </strong>
+            <em>
               "JOIE DE VIVIRE" COLLECTION
-            </div>
+            </em>
           </h2>
         </div>
         <div class="products-contents">
-          <ul>
+          <ul class="clearfix">
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product01.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product02.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product03.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product04.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product05.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
             <li>
-              <button type="button">
+              <div>
                 <img src="/src/images/product06.jpg" alt="상품 이미지 설명">
-              </button>
+              </div>
             </li>
           </ul>
         </div>
 
-
-        <div id="timer"></div>
-        <div class="order">
-          <div class="">
+        <div class="event-timer">
+          <div id="timer"></div>
+        </div>
+        
+        <div class="preorder">
+          <div class="preorder-notify">
             <button type="button"><span class="kakao-talk">image</span>카카오톡 알람받기</button>
           </div>
-          <div class="">
+          <div class="preorder-participate">
             <button type="button">프리오더 참여하기</button>
           </div>
-          <div class="close">
+          <div class="preorder-close">
             <div class="">
               <button type="button">아쉽게도 마감되었어요!</button>
             </div>
@@ -85,9 +87,51 @@
           </div>
         </div>
       </div>
-
     </section>
-
+    <section class="announce">
+      <div class="preorder-period">
+        <div class="">
+          <em>프리오더 기간</em>
+          <div class="preiod">
+            값 js로 받아오기
+          </div>
+        </div>
+        <div class="delivery-scheduled">
+          <div>
+            <em>배송 예상일</em>
+            <strong>2021년 2월 말 순차배송</strong>
+          </div>
+        </div>
+      </div>
+      <div class="corona19-announcement">
+        <div class="">
+          <h2>
+            <span></span>
+            <span>코로나 19 공지</span>
+          </h2>
+        </div>
+        <div class="">
+          <p>아시아 및 유럽내 코로나 확산으로 인하여 21PS 시즌 원단 및 부자재 생산에 지연이 예상되고 있습니다.</p>
+          <p>코로나 사태가 확산되기 전 브랜드가 공지한 제조완료 및 배송시작 시점이 부득이하게 지연되어 발송이 늦어질 수 있는 점 양해바랍니다.</p>
+        </div>
+        <div class="">
+          <div class="">
+            <h3>주문안내</h3>
+            <div class="">
+              <p>사용자 주문 폭주로 인해 결제가 지연될 수 있습니다.</p>
+              <p>해당 오더는 오더 기간 내에만 주문 취소 및 사이즈 교환이 가능합니다.</p>
+              <p>프리오더를 통해 구매한 상품은 프리오더 기간이 끝난 후에는 교환 및 환불, 주문취소가 절대 불가합니다.</p>
+              <p>해당 프리오더는 사정에 따라 예고없이 종료 혹은 취소될 수 있습니다.</p>
+              <p>취소 재고분 발생 시 해당 재고는 실시간으로 재고에 반영되며, 취소분 이외에 별도의 재입고건은 없는 점 참고 바랍니다.</p>
+            </div>
+          </div>
+          <div class="">
+            <h3>배송안내</h3>
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <footer style="display: none;">
