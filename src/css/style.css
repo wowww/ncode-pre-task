@@ -8,8 +8,16 @@
   content: '';
 }
 
+.mb20 {
+  margin-bottom: 20px;
+}
+
 .mb30 {
   margin-bottom: 30px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
 }
 
 .wrap {
@@ -95,6 +103,114 @@ section {
 
 }
 
+.announce {
+  padding-top: 30px;
+  font-size: 0.9em
+}
+
+.preorder-period {
+  background-color: #f3f3f2;
+}
+
+.preorder-period,
+.corona19-announcement,
+.order-announcement {
+  padding: 2%;
+}
+
+.preorder-period div {
+  float: left;
+}
+
+.period {
+  width: 30%;
+}
+
+.delivery-scheduled {
+  width: 70%;
+}
+
+.preorder-period div em {
+  font-weight: 600;
+}
+
+.preorder-period div strong {
+  margin-left: 10px;
+}
+
+.corona19-announcement {
+  color: #fff;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.corona19-title,
+.corona19-contents {
+  float: left;
+}
+
+.corona19-title {
+  width: 30%;
+  font-size: 1.3em;
+  line-height:  40px;
+}
+
+.corona19-contents {
+  width: 70%;
+}
+
+.corona19-contents p:first-child {
+  margin-bottom: 6px;
+}
+
+.order-announcement {
+  border: 1px dashed #d1d1d1;
+}
+
+.order-announcement .order-info,
+.order-announcement .delivery-info {
+  float: left;
+  width: 50%;
+}
+
+.order-announcement h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.order-info-contents,
+.delivery-info-contents {
+  margin-right: 30px;
+}
+
+.order-info-contents p,
+.delivery-info-contents p {
+  position: relative;
+  margin-bottom: 6px;
+  margin-left: 10px;
+}
+
+.order-info-contents p:before,
+.delivery-info-contents p:before {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  display: block;
+  content: '-';
+}
+
+.discount-event {
+  max-width: 100%;
+}
+
+.event-bg {
+  min-width: 100%;
+  background-color: #f3f3f2;
+}
+
+.event-contents {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
 
 
