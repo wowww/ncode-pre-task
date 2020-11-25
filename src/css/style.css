@@ -237,6 +237,83 @@ section {
   background-image: url(../images/description-item.jpg);
 }
 
+.collection-wrap {
+  overflow: hidden;
+}
+
+.collection {
+  padding: 90px 0;
+}
+
+.collection-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.collection-title strong, 
+.collection-title small {
+  display: block;
+}
+
+.collection-title strong {
+  margin-bottom: 10px;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.collection-title small {
+  font-size: 1em;
+}
+
+.collection-item {
+  margin: -1%;
+}
+
+.collection-item ul li {
+  float: left;
+  width: 25%;
+  
+}
+
+.collection-item ul li div {
+  padding: 4%;
+}
+
+.collection-item ul li img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.collection-item ul li img:hover {
+  transition: 0.5s ease;
+  box-shadow: 0 0.1rem 1rem rgba(0,0,0,.25)!important;
+  
+}
+
+.collection-item-info {
+   margin-top: 20px;
+}
+
+.collection-item-wrap .collection-item-info,
+.collection-item-wrap .collection-item-title {
+  padding: 0;
+}
+
+.collection-item-title > small {
+  display: block;
+  padding-top: 10px;
+  width: 100%;
+  font-size: 0.9em;
+}
+
+.collection-item .more {
+  display: block;
+  text-align: center;
+}
+
+
 
 @media (max-width: 576px) {
 
