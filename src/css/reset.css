@@ -52,6 +52,7 @@ img {
 }
 
 button {
+	display: block;
 	outline: 0;
 	border: 0 none;
   background: transparent;
