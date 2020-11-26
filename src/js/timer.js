@@ -15,7 +15,10 @@ function updateTimer() {
   s = secs - mins * 60;
   percent = (now - startTime) * 100 / (endTime-startTime);
 
-  document.getElementById("timer")
+  const PERCENTAGE = Math.floor(percent);
+
+  if (PERCENTAGE < 100) {
+    document.getElementById("timer")
     .innerHTML =
     '<div class="bar">' + '<span class="bar-color"><span></div>' +
     '<div class="timer-text-wrap">' +
@@ -26,5 +29,14 @@ function updateTimer() {
     '<div><em>' + s + '</em><span>초</span></div></div>';
 
   document.querySelector('.bar-color').style.width = `${percent}%`;
+  
+  } else {
+    document.getElementById("timer")
+    .innerHTML =
+    '<div class="bar">' +
+    '<div class="remain-time-over">남은시간</div> <em>0</em></div>' 
+  }
+
+  
 }
 setInterval('updateTimer()', 1000);
