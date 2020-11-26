@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <!-- <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-car.css" /> -->
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/timer.css">
@@ -14,6 +15,7 @@
   <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="http://github.hubspot.com/odometer/odometer.js"></script>
   <title>d.code</title>
 </head>
 
@@ -151,9 +153,8 @@
           </div>
           <div class="discount-percentage">
             <span>~</span>
-            <div class="scroll-event-down">8</div>
-            <div class="scroll-event-up">6</div>
-            <span>%</span>
+            <div id="i" class="odometer"></div>
+            <span class="percentage-text">%</span>
           </div>
           <div class="event-label">
             <span class="evt-label01">SHOES</span>
@@ -537,6 +538,8 @@
   <script src="/src/js/timer.js"></script>
   <script src="/src/js/slider.js"></script>
   <script src="/src/js/index.js"></script>
+  <script src="/src/js/odometer.js"></script>
+
 </body>
 
 </html>
