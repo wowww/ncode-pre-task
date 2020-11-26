@@ -34,9 +34,12 @@ function updateTimer() {
     document.getElementById("timer")
     .innerHTML =
     '<div class="bar">' +
-    '<div class="remain-time-over">남은시간</div> <em>0</em></div>' 
+    '<div class="remain-time-over">남은시간</div> <em>0</em></div>';
+    
+    document.querySelector('.close-shadow').style.display = "block";
   }
 
+  
   
 }
 setInterval('updateTimer()', 1000);
