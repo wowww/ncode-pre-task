@@ -7,14 +7,14 @@
   font-size: 1em;
 }
 
-#timer  .timer-text-wrap {
+#timer .timer-text-wrap {
   display: block;
   content: '';
   clear: both;
 
 }
 
-#timer  .timer-text-wrap div {
+#timer .timer-text-wrap div {
   float: left;
 }
 
