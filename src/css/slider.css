@@ -1,0 +1,76 @@
+.page-wrapper {
+  position: relative;
+}
+
+.post-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.post-slider .silder-title {
+  text-align: center;
+}
+
+.post-slider .next {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -72px;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: contain;
+  background-image: url(../images/slidebutton.png);
+  cursor: pointer;
+}
+
+.post-slider .prev {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -72px;
+  width: 72px;
+  height: 72px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: contain;
+  background-image: url(../images/slidebutton.png);
+  cursor: pointer;
+  transform: rotateY(-180deg);
+}
+
+.post-slider .post-wrapper {
+  overflow: hidden;
+  margin-right: -1%;
+}
+
+.post-slider .post-wrapper .post {
+  display: inline-block;
+ margin-right: -0%; 
+}
+
+.slider-image {
+  margin-bottom: 30px;
+}
+
+.slider-image,
+.slider-text {
+  margin-right: 10px;
+}
+
+
+.post-slider .post-wrapper .post img {
+  width: 100%;
+}
+
+.slide-title {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slide-contents {
+  text-align: center;
+}
