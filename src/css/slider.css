@@ -109,3 +109,15 @@
 .swiper-button-prev::after, .swiper-button-next::after{
   color: rgba(255,255,255,0.7);
 }
+
+@media (max-width: 768px) {
+  .slide-wrap {
+    padding: 0 8%;
+  }
+
+  .post-slider .prev,
+  .post-slider .next {
+    width: 36px;
+    height: 36px;
+  }
+}
