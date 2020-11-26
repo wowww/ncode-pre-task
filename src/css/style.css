@@ -99,6 +99,11 @@ section {
   box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .25);
 }
 
+.products-contents img.active {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
 .preorder {}
 
 .announce {
