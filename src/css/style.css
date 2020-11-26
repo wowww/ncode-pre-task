@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
+  /* outline: 1px solid rgba(255, 0, 0, 0.2); */
 }
 
 .clearfix:after {
@@ -25,6 +25,10 @@
 }
 
 .main {
+  display: none;
+}
+
+.display-none {
   display: none;
 }
 
@@ -104,7 +108,93 @@ section {
     box-sizing: border-box;
 }
 
-.preorder {}
+.preorder {
+  font-size: 0.9em;
+}
+
+.preorder button {
+  padding: 5px 0;
+  width: 100%;
+}
+
+.kakao-color {
+  color: #3A1D1D;
+  background-color: #F7E600;
+  border-radius: 50px;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+}
+
+.kakao-talk {
+display: table-cell;
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+background-image: url("https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com/common/images/icKakao@3x.png");
+}
+
+.preorder-notify button em {
+  width: 100%;
+  margin-left: 5px;
+  line-height: 32px;
+}
+
+.preorder-participate {
+  background-color: #28d28e;
+  border-radius: 50px;
+}
+
+.preorder-participate button {
+  height: 42px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.preorder-participate em {
+  display: table-cell;
+}
+
+.preorder-participate em strong {
+  margin-right: 5px;
+}
+
+.preorder-participate span {
+  display: table-cell;
+  margin-left: 5px;
+  width: 22px;
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(/src/images/participate.png);
+}
+
+.preorder-close .w50 {
+  float: left;
+  width: 49.5%;
+}
+
+.preorder-close-button {
+  margin-right: 1%;
+}
+
+.preorder-close-button button {
+  line-height: 32px;
+  border: 1px dashed #d1d1d1;
+  border-radius: 50px;
+  cursor: auto;
+}
+
+.preorder-close em {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.preorder-close em strong {
+  margin-left: 5px;
+}
 
 .announce {
   padding-top: 30px;
