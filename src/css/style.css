@@ -1,7 +1,3 @@
-* {
-  /* outline: 1px solid rgba(255, 0, 0, 0.2); */
-}
-
 .clearfix:after {
   display: block;
   clear: both;
@@ -70,18 +66,15 @@ section {
 }
 
 .products-contents {
-  /* overflow: hidden; */
   margin: -1%;
 }
 
 .products-contents ul {
   width: 100%;
-  /* margin: 1%; */
 }
 
 .products-contents ul li {
   float: left;
-  /* padding: 1.5%; */
   width: 33.333%;
 }
 
@@ -450,6 +443,10 @@ background-image: url("https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com
   text-align: center;
 }
 
+.description span {
+  display: block;
+}
+
 .description-item {
   width: 100%;
   padding-bottom: 61%;
@@ -458,7 +455,7 @@ background-image: url("https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com
 }
 
 .collection-wrap {
-  /* overflow: hidden; */
+  padding-bottom: 90px;
 }
 
 .collection {
@@ -737,15 +734,190 @@ iframe {
   border: 1px solid #000;
 }
 
-
-
-@media (max-width: 576px) {}
-
-@media (max-width: 768px) {}
+@media (max-width: 1200px) {}
 
 @media (max-width: 992px) {}
 
-/* 
-@media (max-width: 1100px) {
+@media (max-width: 768px) {
+  section {
+    overflow: hidden;
+  }
 
-} */
+  .products {
+    display: block;
+    padding-top: 0; 
+  }
+
+  .view-product, .product-list {
+    width: 100%;
+  }
+
+  .product-title {
+    position: relative;
+  }
+  .product-title h2 {
+    position: absolute;
+    margin-top: 77%;
+    left: 4%;
+  }
+
+  .products-contents {
+    padding-right: 4%;
+    padding-left: 4%;
+    padding-bottom: 14%;
+  }
+
+  .event-timer,
+  .preorder {
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  .products-contents ul li div img:hover {
+    transition: none;
+    box-shadow: none;
+  }
+
+  .collection-item ul li img:hover {
+    transition: none;
+    box-shadow: none;
+  }
+  .tabmenu .content div:hover {
+    transition: none;
+    box-shadow: none;
+  }
+
+  .period {
+    width: 100%;
+  }
+
+  .preorder-period div em {
+    display: inline-block;
+    margin-bottom: 1%;
+    width: 79px;
+  }
+
+  .preorder-period,
+  .corona19-announcement,
+  .order-announcement {
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+
+  .discount-percentage {
+    margin: 9% 0 17%;
+  }
+
+  .discount-contents strong,
+  .discount-contents em {
+    font-size: 1em;
+  }
+
+  .corona19-title {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  .corona19-contents {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .corona19-contents p:last-child {
+    margin-bottom: 6px;
+  }
+  .order-announcement .order-info, 
+  .order-announcement .delivery-info {
+    float: none;
+    width: 100%;
+  }
+
+  .order-info-contents, 
+  .delivery-info-contents {
+    margin-right: 0;
+  }
+
+  .discount-percentage {
+    font-size: 3em;
+  }
+
+  .event-text {
+    padding: 7% 0 0;
+  }
+
+  .event-label span {
+    font-size: 0.8em;
+  }
+
+  .event-label span {
+    padding: 7px 15px;
+  }
+
+  .description {
+    padding-right: 4%;
+    padding-left: 4%;
+    font-size: 0.9em;
+  }
+
+  .description span {
+    display: inline;
+  }
+
+  .collection-title strong {
+    font-size: 1.2em;
+  }
+
+  .collection-title small {
+    font-size: 0.8em;
+  }
+
+  .close-shadow {
+    display: none !important;
+  }
+
+
+
+  .slide-wrap {
+    padding: 0 4%;
+  }
+
+  .collection-item-info {
+    font-size: 0.8em;
+  }
+
+  .collection-item-title > small {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 436px) {
+  .product-title h2 {
+    font-size: 0.8em;
+  }
+
+  .event-text {
+    padding: 6% 0 0;
+  }
+
+  .discount-percentage {
+    margin: 7% 0 13%;
+  }
+
+  .discount-percentage {
+    font-size: 2em;
+  }
+
+  .discount-contents strong, .discount-contents em {
+    font-size: 0.9em;
+  }
+
+  .event-label span {
+    font-size: 0.6em;
+  }
+
+  .event-label span {
+    padding: 2px 8px;
+  }
+}
