@@ -16,9 +16,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <title>d.code</title>
 </head>
-<style>
 
-</style>
 <body>
   <div class="wrap">
     <div class="main">
@@ -26,7 +24,7 @@
     </div>
     <section class="products">
       <div class="view-product">
-        <img src="src/images/main-product01.jpg" alt="">
+        <img src="src/images/main-product01.jpg" alt="" id="show">
       </div>
       <div class="product-list">
         <div class="product-title mb30">
@@ -40,40 +38,39 @@
           </h2>
         </div>
         <div class="products-contents">
-          <ul class="clearfix">
+          <ul class="clearfix" id="thumb_img">
             <li>
               <div>
-                <img src="/src/images/product01.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product01.jpg" alt="상품 이미지 설명" id="myImg" class="active" onclick="changeImg('/src/images/main-product01.jpg',this);">
               </div>
             </li>
             <li>
               <div>
-                <img src="/src/images/product02.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product02.jpg" alt="상품 이미지 설명" id="myImg" onclick="changeImg('/src/images/main-product02.jpg',this);">
               </div>
             </li>
             <li>
               <div>
-                <img src="/src/images/product03.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product03.jpg" alt="상품 이미지 설명" id="myImg" onclick="changeImg('/src/images/main-product03.jpg',this);">
               </div>
             </li>
             <li>
               <div>
-                <img src="/src/images/product04.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product04.jpg" alt="상품 이미지 설명" id="myImg" onclick="changeImg('/src/images/main-product08.jpg',this);">
               </div>
             </li>
             <li>
               <div>
-                <img src="/src/images/product05.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product05.jpg" alt="상품 이미지 설명" id="myImg" onclick="changeImg('/src/images/main-product05.jpg',this);">
               </div>
             </li>
             <li>
               <div>
-                <img src="/src/images/product06.jpg" alt="상품 이미지 설명">
+                <img src="/src/images/product06.jpg" alt="상품 이미지 설명" id="myImg" onclick="changeImg('/src/images/main-product06.jpg',this);">
               </div>
             </li>
           </ul>
         </div>
-
         <div class="event-timer">
           <div id="timer"></div>
         </div>
@@ -512,7 +509,7 @@
       </div>
     </section>
 
-    <footer style="display: none;">
+    <footer>
 
       ⓒ 2019 N.CODE, Inc. All Rights Reserved
 
@@ -536,6 +533,7 @@
 
   </div>
 
+  <script src="/src/js/tab.js"></script>
   <script src="/src/js/timer.js"></script>
   <script src="/src/js/slider.js"></script>
   <script src="/src/js/index.js"></script>
