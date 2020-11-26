@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid rgba(255, 0, 0, 0.2); */
+  outline: 1px solid rgba(255, 0, 0, 0.2);
 }
 
 .clearfix:after {
@@ -318,6 +318,12 @@ section {
   text-align: center;
 }
 
+.collection-item .more button:hover {
+  transition: 0.4s ease;
+  color: #fff;
+  background-color: #000;
+}
+
 .collection-item .more button {
   display: inline-block;
   padding: 20px 80px;
@@ -347,9 +353,122 @@ iframe {
   margin-right: auto;
 }
 
+.tabmenu nav {
+  margin-bottom: 30px;
+}
 
+.tabmenu li,
+.tabmenu .content div {
+  cursor: pointer;
+}
 
+.tabmenu .content div {
+  transition: 0.3s;
+}
 
+.tabmenu .content div:hover {
+  transition: 0.5s ease;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, .25);
+}
+
+.tabmenu li.active {
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.tabmenu .content {
+  display: none;
+  opacity: 0;
+  
+  
+  -webkit-animation: display-none-transition 1s ease;
+  animation: display-none-transition 1s ease;
+}
+
+@keyframes display-none-transition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  
+  1% {
+    display: block;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes display-none-transition {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  
+  1% {
+    display: block;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-section .active {
+  display: flex;
+  opacity: 1;
+}
+
+.content-section > div {
+  width: 100%;
+}
+
+.content-section > div > div {
+  justify-content: center;
+  margin-right: 1%;
+  width: 25%;
+}
+
+.content-section .tab-shoes {
+  margin-right: 0;
+}
+
+.content-section > div > div:last-child {
+  margin-right: 0;
+} 
+
+.content-section > div > div > img {
+  width: 100%;
+}
+
+.tabmenu ul {
+  display: flex;
+  padding: 0;
+  
+}
+
+.tabmenu li {
+  margin-right: 1%;
+  padding: 20px 0;
+  justify-content: center;
+  width: 25%;
+  text-align: center;
+  font-weight: 600;
+  color: #d1d1d1;
+  background-color: #fff;
+  border: 1px solid #d1d1d1;
+}
+
+.tabmenu li:last-child {
+  margin-right: 0;
+}
+
+.tabmenu li.active {
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+}
 
 
 
