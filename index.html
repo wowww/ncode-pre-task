@@ -8,9 +8,16 @@
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/timer.css">
+  <link rel="stylesheet" href="src/css/slider.css">
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  
   <title>d.code</title>
 </head>
+<style>
 
+
+</style>
 <body>
   <div class="wrap">
     <div class="main">
@@ -196,8 +203,8 @@
                 <a href="">
                   <img src="/src/images/product01.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -205,7 +212,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -214,8 +221,8 @@
                 <a href="">
                   <img src="/src/images/product05.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -223,7 +230,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -232,8 +239,8 @@
                 <a href="">
                   <img src="/src/images/product02.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -241,7 +248,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -250,8 +257,8 @@
                 <a href="">
                   <img src="/src/images/product03.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -259,7 +266,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -268,8 +275,8 @@
                 <a href="">
                   <img src="/src/images/product04.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -277,7 +284,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -286,8 +293,8 @@
                 <a href="">
                   <img src="/src/images/product05.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -295,7 +302,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -304,8 +311,8 @@
                 <a href="">
                   <img src="/src/images/product06.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -313,7 +320,7 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
@@ -322,8 +329,8 @@
                 <a href="">
                   <img src="/src/images/product04.jpg" alt="">
                 </a>
-                <div class="collection-item-info">
-                  <div class="collection-item-title">
+                <div class="collection-item-info" href="">
+                  <a class="collection-item-title">
                     <span class="gender">[Woman]</span>
                     <strong>
                       21SS RACHEL CROCO EMBOSSED LEATHER WHEAT
@@ -331,28 +338,87 @@
                     <small>
                       BY FAR
                     </small>
-                  </div>
+                  </a>
                 </div>
               </div>
             </li>
           </ul>
-          
+
           <div class="more">
             <button type="button">MORE +</button>
           </div>
         </div>
-        <div class="beand-collection">
+        <div class="brand-collection mb90">
           <div class="collection-title">
             <h3>
               BRAND COLLECTION
             </h3>
           </div>
-          <div class="beand-collection-slide">
-
+          <div class="brand-collection-slide">
+            <div class="page-wrapper" style="position:relative;">
+              <div class="post-slider">
+                <div class="prev"></div>  
+                <div class="next"></div>  
+                <div class="post-wrapper">
+                  <div class="post">
+                    <div class="slider-image">
+                      <img src="src/images/slide.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slide-title">CASABLANCA</div>
+                      <div class="slide-contents">
+                        <span class="gender">[WOMAN]</span>
+                        <span>21SS RACHEL CROCO</span>
+                        <span>EMBOSSED LEATHER WHEAT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="slider-image">
+                      <img src="src/images/slide.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slide-title">CASABLANCA</div>
+                      <div class="slide-contents">
+                        <span class="gender">[WOMAN]</span>
+                        <span>21SS RACHEL CROCO</span>
+                        <span>EMBOSSED LEATHER WHEAT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="slider-image">
+                      <img src="src/images/slide.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slide-title">CASABLANCA</div>
+                      <div class="slide-contents">
+                        <span class="gender">[WOMAN]</span>
+                        <span>21SS RACHEL CROCO</span>
+                        <span>EMBOSSED LEATHER WHEAT</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post">
+                    <div class="slider-image">
+                      <img src="src/images/slide.jpg" alt="">
+                    </div>
+                    <div class="slider-text">
+                      <div class="slide-title">CASABLANCA</div>
+                      <div class="slide-contents">
+                        <span class="gender">[WOMAN]</span>
+                        <span>21SS RACHEL CROCO</span>
+                        <span>EMBOSSED LEATHER WHEAT</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="collection-movie">
-          동영상추가
+          
         </div>
       </div>
     </section>
@@ -384,6 +450,7 @@
   </div>
 
   <script src="/src/js/timer.js"></script>
+  <script src="/src/js/slider.js"></script>
 
 </body>
 
