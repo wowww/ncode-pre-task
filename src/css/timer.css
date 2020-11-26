@@ -22,6 +22,11 @@
   margin-right: 7px;
 }
 
+.remain-time-over {
+  display: inline-block;
+  padding: 20px 0 0;
+}
+
 #timer em {
   margin-left: 3px;
 }
