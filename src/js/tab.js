@@ -7,3 +7,10 @@ function changeImg(url, e) {
   }
   e.classList.add('active');
 }
+
+jQuery(document).ready(function($){
+  $(".show-more-btn").click(function(e){
+    $(".show-more-item:hidden").slice(0,4).fadeIn();
+    if ($(".show-more-item:hidden").length < 1) $(this).fadeOut();
+  })
+})
