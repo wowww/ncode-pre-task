@@ -522,6 +522,51 @@ background-image: url("https://dcode-prod-bucket.s3.ap-northeast-2.amazonaws.com
   margin-top: 20px;
 }
 
+.collection-item-wrap {
+  position: relative;
+}
+
+.collection-item-wrap .comingsoon-shadow {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  width: 93%;
+  height: 75%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.collection-item-wrap .comingsoon-shadow span {
+  display: inline-block;
+  width: 37%;
+  margin: 50% 26%;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #000;
+}
+
+.collection-item-wrap .close-shadow {
+  display: none;
+  z-index: 1;
+  position: absolute;
+  top: 1.5%;
+  left: 1.5%;
+  width: 93%;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.collection-item-wrap .close-shadow span {
+  display: inline-block;
+    width: 19%;
+    margin: 50% 34%;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+}
+
+
 .collection-item-wrap .collection-item-info,
 .collection-item-wrap .collection-item-title {
   padding: 0;
